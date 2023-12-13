@@ -2,12 +2,12 @@
 
 /*******************************************************************************
  * Port F AHB address begins at 0x4005D
- * All offsets from this address correspond to specific register.
+ * All offsets from this address correspond to a specific register.
  ******************************************************************************/
 
-// 0x3FC = 0b0011.1111.1100
 // The offset is a mask indicating what bits to read/write for the data register
 // 3FC gives a mask for all the bits. Note that the mask is offset by 2.
+// 0x3FC = 0b0011.1111.1100
 // Bits [9:2] are used for the mask.
 #define GPIO_PORTF_DATA_R       (*((volatile uint32_t*)0x4005D3FC))
 
